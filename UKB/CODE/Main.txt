@@ -1,0 +1,7 @@
+
+#sbatch UKBUnpack.sh ##Before running this file, open it and change the global UKBRAWPATH to wherever the user's UKB data is stored, then save. Make sure that all data fields in mentioned in this file are available..
+#sbatch UKBPrepareCensusStack
+#sbatch UKBCensusMissingDataImpute.sh
+#sbatch LassoProbitWeights.sh
+#sbatch KFoldWeightsAndWinsorize.sh
+#sbatch UKBTables.sh 
